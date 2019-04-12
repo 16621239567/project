@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://g.alicdn.com/vip/login/0.5.65/css/new-loginV2.css?t=20151220" />
+    <link rel="stylesheet" href="https://assets.alicdn.com/g/vip/register/2.9.7/xcommon/css/??base.css,form.css,btn.css,dialog.css,ks.css,msg.css,password.css,info.css,responsive.css?t=201404171640">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="script/thirdplugins/require.js" async="true" defer data-main="script/js/main.js"></script>
+</head>
+
+<body>
+    <div id="top">
+
+    </div>
+
+
+    <div id="content">
+        <div class="wrapper">
+            <div class="header">
+                <h1 class="logo">
+                    <a href="javascript:;" title="淘宝网">
+                        <i class="iconfont tb-logo-cn">㖸</i>
+                        <i class="iconfont tb-logo-url">㖷</i>
+                    </a>
+                </h1>
+                <h2>用户注册</h2>
+            </div>
+
+            <div class="register_box">
+                <p>
+                    <i></i>
+                    <span>填写账号信息</span>
+                </p>
+            </div>
+
+            <div class="form_box">
+                <form action="http://127.0.0.1/workPHP/taobao/php/reg.php" method="post" id="register_form">
+                    <div class="username_box form_list_box">
+                        <p class="form_ex">
+                            <span class="form_title">设置用户名(手机号)</span>
+                            <span class="form_hint">通过手机号注册您的用户名</span>
+                        </p>
+                        <div class="form_item">
+                            <label for="username" class="label_left">用 户 名</label>
+                            <input type="text" class="user_input fn_input" id="username" name="username" placeholder="请输入你的手机号">
+                            <label id="username-error" class="error label_right" for="username">*手机号码为必填选项</label>
+                        </div>
+                    </div>
+                    <div class="password_box form_list_box">
+                        <p class="form_ex">
+                            <span class="form_title">请设置登录密码</span>
+                            <span class="form_hint">登录时验证，保护账号信息</span>
+                        </p>
+                        <div class="form_item">
+                            <div class="pass_line1 pass_line">
+                                <label for="password" class="label_left">登录密码</label>
+                                <input type="password" class="user_input" id="password" name="password" placeholder="设置你的登录密码">
+                                <label id="password-error" class="error label_right" for="password">*用户名密码为必填项</label>
+                            </div>
+                            <div class="pass_line2 pass_line">
+                                <label for="repass" class="label_left">密码确认</label>
+                                <input type="password" class="user_input fn_input" id="repass" name="repass" placeholder="请再次输入你的密码">
+                                <label id="repass-error" class="error label_right" for="repass">*请再次输入你的密码</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member_box form_list_box">
+                        <p class="form_ex">
+                            <span class="form_title">设置会员名</span>
+                        </p>
+                        <div class="form_item">
+                            <label for="member" class="label_left">会 员 名</label>
+                            <input type="text" class="user_input fn_input" id="member" name="member" placeholder="会员名一旦设置成功无法修改">
+                            <label id="member-error" class="error label_right" for="member">*建议使用简体中文，方便好记</label>
+                        </div>
+                    </div>
+
+                    <div class="button_box form_list_box">
+                        <div class="form_item">
+                            <button type="submit" class="btn_submit" value="注册" name="submit">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div id="bottom">
+    </div>
+
+    
+
+</body>
+
+</html>

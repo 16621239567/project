@@ -1,0 +1,46 @@
+@charset "utf-8";
+@mixin wrapper($width) {
+    width: $width;
+    margin: 0 auto;
+}
+@mixin top_middle($height) {
+    height: $height;
+    line-height: $height;
+}
+@mixin wh($length) {
+    width: $length;
+    height: $length;
+}
+@mixin clearfix() {
+    &::after{
+        content: "";
+        display: block;
+        width: 0;
+        overflow: hidden;
+        visibility: hidden;
+        clear: both;
+    }
+}
+body{
+    background: #f4f4f4;
+    position: relative;
+}
+@import "top";
+@import "index-top-ad";
+@import "index-header";
+@import "index-nav";
+@import "index-main";
+@import "index-section-ad";
+@import "index-footer";
+@for $i from 0 to 13{
+    .section_#{$i}{
+        @include wrapper(1190px);
+        margin-top: 10px;
+        overflow: hidden;
+    }
+}
+
+
+
+
+

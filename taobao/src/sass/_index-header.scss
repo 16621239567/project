@@ -1,0 +1,352 @@
+@charset "utf-8";
+
+#header {
+    height: 140px;
+    background-color: #FFF;
+
+    .wrapper {
+        @include wrapper(1190px);
+        @include clearfix();
+        position: relative;
+
+    }
+
+    .logo {
+        width: 190px;
+        height: 80px;
+        float: left;
+    }
+
+    .search_box {
+        height: 87px;
+        margin-left: 258px;
+        margin-right: 302px;
+
+        .search_wrapper {
+            @include wrapper(630px);
+        }
+
+        padding-top: 35px;
+        position: relative;
+    }
+
+    .search_tab {
+        width: 613px;
+        height: 22px;
+
+        ul {
+            @include clearfix();
+
+            li {
+                color: #F40;
+                text-align: center;
+                float: left;
+                width: 36px;
+                height: 22px;
+                line-height: 22px;
+                margin-right: 4px;
+                cursor: pointer;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+            }
+            li:hover {
+                background-color: #FFEEE5;
+                color: #FF5400;
+            }
+            .search_active {
+                background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+                background-repeat: repeat-x;
+                color: #FFF;
+                font-weight: 700;
+            }
+        }
+
+        
+    }
+
+    .search_bar {
+        position: relative;
+        margin-left: -17px;
+
+        form {
+            color: #3C3C3C;
+        }
+
+        .search_input {
+            margin-right: 74px;
+            border: 2px solid #ff5000;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-right: none;
+            overflow: hidden;
+            width: 555px;
+            height: 36px;
+
+            input {
+                padding: 7px 0;
+                text-indent: 10px;
+                height: 24px;
+                line-height: 24px;
+                width: 472px;
+                border: none;
+                outline: 0;
+                background: #FFF;
+            }
+
+            input::-ms-input-placeholder {
+                padding-left: 25px;
+            }
+
+            input::-webkit-input-placeholder {
+                padding-left: 25px;
+            }
+
+            i {
+                font-size: 16px;
+            }
+
+            .saoma_ifont {
+                position: absolute;
+                right: 100px;
+                top: 3px;
+
+            }
+
+            a:hover {
+                color: #3C3C3C;
+            }
+        }
+
+        .search_button {
+            position: absolute;
+            right: 16px;
+            top: 0;
+            z-index: 100;
+            width: 74px;
+            height: 40px;
+            overflow: hidden;
+            text-align: center;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            button {
+                font-size: 18px;
+                font-weight: 700;
+                color: #FFF;
+                cursor: pointer;
+                height: 100%;
+                border: none;
+                width: 100%;
+                background: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+                background-repeat: repeat-x;
+            }
+        }
+
+    }
+
+    .search_tj {
+        margin-top: 5px;
+    }
+
+    .header_right {
+        position: absolute;
+        right: 130px;
+        top: 20px;
+
+        a {
+            display: block;
+            width: 120px;
+            height: 120px;
+            background: url('https://img.alicdn.com/tfs/TB1FkK3s9zqK1RjSZFLXXcn2XXa-120-120.png')
+        }
+    }
+}
+
+
+/*  悬浮 搜索框部分  */
+.fixed_search{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 7px 0;
+    background: #FFF;
+    overflow: visible;
+    padding-bottom: 9px;
+    display: none;
+    @include clearfix();
+    .wrapper{
+        @include wrapper(1190px);
+    }
+    h1{
+        float: left;
+        a{
+            display: block;
+            padding-top: 33px;
+            width: 80px;
+            height: 0;
+            text-indent: -9999px;
+            overflow: hidden;
+            background: url(//img.alicdn.com/tfs/TB1TGfMcwMPMeJjy1XbXXcwxVXa-80-33.png) 0 0 no-repeat;
+        }
+    }
+    .fs_input{
+        float: left;
+        margin-left: 258px;
+        height: 36px;
+        position: relative;
+
+        
+    }
+    .input_tab{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        height: 40px;
+        background: #f4f4f4;
+        width: 74px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 72px;
+            content: '';
+            height: 36px;
+            border: 2px solid #ff5000;
+            border-right: none;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        ul{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            background-color: #f4f4f4;
+            
+        }
+        li{
+            line-height: 38px;
+            height: 38px;
+            color: #3C3C3C;
+            text-align: center;
+            line-height: 38px;
+            cursor: pointer;
+        }
+    }
+    .from_input{
+        margin-right: 74px;
+        border: 2px solid #ff5000;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-right: none;
+        padding-left: 70px;
+        overflow: hidden;
+        input{
+            padding: 6px 0;
+            text-indent: 25px;
+            height: 24px;
+            line-height: 24px;
+            width: 472px;
+            border: none;
+            outline: 0;
+            background: #FFF;
+        }
+        i{
+            position: absolute;
+            left: 80px;
+            top: 10px;
+        }
+        
+    }
+    .saoma_ifont{
+        position: absolute;
+        right: 90px;
+        top: 3px;
+        font-size: 24px;
+    }
+    .form_button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        width: 74px;
+        height: 40px;
+        overflow: hidden;
+        text-align: center;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        button{
+            font-size: 18px;
+            font-weight: 700;
+            color: #FFF;
+            background-color: #FF4200;
+            cursor: pointer;
+            height: 100%;
+            border: none;
+            width: 100%;
+            background-image: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+            background-repeat: repeat-x;
+        }
+    }
+}
+
+/*  悬浮 楼梯  部分  */
+.fixed_lt{
+    position: absolute;
+    top: 597px;
+    display: block;
+    z-index: 100;
+    top: 595px;
+    right: 50%;
+    width: 50px;
+    height: 500px;
+    text-align: center;
+    margin-right: -655px;
+    .wangwang{
+        position: absolute;
+        height: 36px;
+        width: 50px;
+        line-height: 36px;
+        text-align: center;
+        font-size: 32px;
+        color: #ff7f13;
+        top: -28px;
+        right: 0;
+    }
+    a{
+        display: block;
+        width: 100%;
+        line-height: 17px;
+        font-size: 13px;
+        padding-top: 10px;
+        height: 40px;
+        background: #fff;
+    }
+    .active{
+        background-color: #F40;
+        color: #FFF;
+        font-weight: 700;
+        background-image: linear-gradient(135deg,#ff971b,#ff5000);
+        background-repeat: repeat-x;
+    }
+    
+
+}
+.lt_2{
+    color: #f05;
+}
+.lt_3{
+    color: #8d7afb;
+}
+.lt_4{
+    color: #A8C001;
+}
+.lt_5{
+    color: #f05;
+}
+

@@ -1,0 +1,314 @@
+@charset "utf-8";
+@mixin wrapper($width) {
+    width: $width;
+    margin: 0 auto;
+}
+@mixin top_middle($height) {
+    height: $height;
+    line-height: $height;
+}
+@mixin wh($length) {
+    width: $length;
+    height: $length;
+}
+@mixin clearfix() {
+    &::after{
+        content: "";
+        display: block;
+        width: 0;
+        overflow: hidden;
+        visibility: hidden;
+        clear: both;
+    }
+}
+
+#top{
+    width: 100%;
+    @include top_middle(35px);
+    background: #F5F5F5;
+    border-bottom: 1px solid #EEE;
+    .wrapper{
+        @include wrapper(1200px);
+        @include clearfix();
+        position: relative;
+    }
+
+    .region{
+        @include top_middle(35px);
+        padding: 0 6px;
+        margin-right: 5px;
+        float: left;
+    }
+
+    .top_left{
+        float: left;
+        @include clearfix();
+        
+    }
+    .user{
+        float: left;
+        position: relative;
+    }
+    .top_left>a{
+        float: left;
+        @include top_middle(35px);
+        margin-right: 7px;
+        &:hover{
+            color: #f40;
+        }
+    }
+    .top_right{
+        float: right;
+        .navlist{
+            @include clearfix();
+            i{
+                font-size: 12px;
+            }
+        }
+        .navlist>a{
+            display: block;
+            @include wh(100%);
+        }
+        .navlist>li{
+            float: left;
+            padding: 0 6px;
+            @include top_middle(35px);
+        }
+    }
+    .user_manage{
+        display: none;
+        width: 248px;
+        position: absolute;
+        left: 93px;
+        top: 35px;
+        z-index: 200;
+        padding: 8px;
+        line-height: normal;
+        border: 1px solid #EEE;
+        border-top: 0;
+        background: #FFF;
+        img{
+            width: 56px;
+            height: 56px;
+        }
+        p{
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            margin-top: 3px;
+        }
+    }
+    
+    .user_close{
+        text-align: right;
+        a{
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    .user_pic{
+        float: left;
+        margin-right: 10px;
+        margin-left: 9px;
+        width: 62px;
+        height: 62px;
+        padding: 9px;
+        box-sizing: content-box;
+        a{
+            display: block;
+            overflow: hidden;
+            border: 3px solid #fff;
+            border-radius: 50%;
+        }
+    }
+    .user_info{
+        float: left;
+        height: 80px;
+        overflow: hidden;
+        width: 148px;
+        
+    }
+    .user_qy{
+        width: 248px;
+        height: 25px;
+        float: left;
+        text-align: center;
+        border: 1px solid #FFE8DE;
+        background: #FFF0E8;
+        padding: 4px 0;
+        box-sizing: border-box;
+    }
+}
+.top_nav{
+    width: 1188px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    min-height: 258px;
+    border: 1px solid #eee;
+    background: #fff;
+    padding-bottom: 10px;
+    z-index: 10000;
+
+
+
+    .nav_sec{
+        padding: 5px;
+        border-right: 1px solid #eee;
+        overflow: hidden;
+        float: left;
+        width: 25%;
+        box-sizing: border-box;
+
+        h4{
+            margin: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+            padding-top: 5px;
+            height: 25px;
+            overflow: hidden;
+            a{
+                position: relative;
+                float: left;
+                height: 25px;
+                line-height: 25px;
+                margin: 0 2px;
+                padding: 0 8px;
+                border-radius: 2px;
+                text-align: center;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    /*  主题市场部分   */
+    .ztsc{
+        li{
+            width: 24%;
+            a:hover{
+                background: #fc4200;
+            }
+        }
+    }
+    .tesc{
+        li{
+            width: 33%;
+            a:hover{
+                background: #9fb838;
+            }
+        }
+    }
+    .alapp{
+        li{
+            width: 33%;
+            a:hover{
+                background: #d75696;
+            }
+        }
+    }
+    .jctj{
+        li{
+            width: 50%;
+            a:hover{
+                background: #2e9fdb;
+            }
+        }
+    }
+    .hot{
+        position: absolute;
+        top: -5px;
+        right: 0;
+        display: block;
+        width: 9px;
+        height: 14px;
+        overflow: hidden;
+        background: url(http://img.alicdn.com/tps/i2/T1hOy5XhNnXXXXXXXX-9-14.gif) no-repeat;
+    }
+    .new{
+        position: absolute;
+        top: -5px;
+        right: 0;
+        display: block;
+        width: 9px;
+        height: 14px;
+        overflow: hidden;
+        background: url(https://img.alicdn.com/tps/i3/T1lni5XhXXXXXXXXXX-9-14.gif) no-repeat;
+    }
+}
+
+
+
+/*  top  的 二级导航栏部分  */
+.top_sn_list{
+    position: relative;
+    z-index: 1000;
+    display: none;
+    ul{
+        position: absolute;
+        left: -6px;
+        top: -1px;
+        padding: 8px 0;
+        border: 1px solid #EEE;
+        border-top: 0;
+        background: #FFF;
+        li{
+            @include top_middle(29px);
+            white-space: nowrap;
+        }
+        a{
+            display: inline-block;
+            width: 100%;
+            padding: 0 8px;
+            box-sizing: border-box;
+            &:hover{
+                background-color: #f4f4f4;
+            }
+        }
+    }
+}
+.region_list{
+    ul{
+        height: 270px;
+        overflow: hidden;
+        overflow-y: visible;
+        li{
+            width: 242px;
+        }
+    }
+}
+.gyc{
+    position: relative;
+}
+.top_cart{
+    display: none;
+    ul{
+        li{
+            width: 296px;
+            line-height: 20px;
+            min-height: 40px;
+            text-align: center;
+            p{
+                margin-top: 10px;
+            }
+            span{
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 10px;
+                height: 25px;
+                line-height: 25px;
+                color: #fff;
+                background: #f40;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+   
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+@mixin footer_span() {
+    display: inline;
+    margin: 0 1px;
+    color: #9c9c9c;
+    font-weight: normal;
+}
+#bottom{
+    @include wrapper(1200px);
+    height: 170px;
+    border-top: 1px solid #ddd;
+    margin: 60px auto 0;
+    padding: 7px 0 9px;
+    p{
+        padding-bottom: 8px;
+    }
+    .footer_top{
+        p{
+            line-height: 27px;
+            border-bottom: 1px solid #ddd;
+            a{
+               margin:0 4px;
+            }
+            span{
+                @include footer_span();
+            }
+        }
+    }
+    .footer_md{
+        p{
+            a{
+               margin:0 4px;
+            }
+            span{
+                @include footer_span();
+            }
+            i{
+                @include footer_span();
+                margin: 0 4px;
+                font-style: normal;
+            }
+        }
+    }
+}

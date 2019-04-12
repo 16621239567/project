@@ -1,0 +1,18 @@
+@charset "utf-8";
+@mixin wrapper($width) {
+    width: $width;
+    margin: 0 auto;
+    overflow: hidden;
+}
+@mixin clearfix() {
+    &::after{
+        content: "";
+        display: block;
+        width: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+}
+@import "top";
+@import "index-footer";
+@import "cart_content";

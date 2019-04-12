@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="淘宝详情页">
+    <meta name="description" content="淘宝详情页">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="script/thirdplugins/require.js" async="true" defer data-main="script/js/main.js"></script>
+</head>
+
+<body>
+    <!-- 商品详情页的头部部分  共有的部分由js引入 -->
+    <div id="top">
+
+    </div>
+
+
+    <!-- 详情页头部的部分  包含 首页的logo  和  搜索框 -->
+    <div id="header">
+        <div class="wrapper">
+            <!-- logo 部分 -->
+            <h1 class="logo">
+                <a href="http://127.0.0.1/workPHP/taobao/src/index.html">
+                    <img src="https://gtms01.alicdn.com/tps/i1/T1Kz0pXzJdXXXIdnjb-146-58.png" alt="">
+                </a>
+            </h1>
+            <div class="market">
+                <a href="#" class="more">
+                    更多市场
+                    <span class="site-nav-icon"></span>
+                </a>
+            </div>
+
+            <!-- 搜索框 -->
+            <div class="search_box">
+                <form action="">
+                    <div class="search_input">
+                        <input type="text" name="">
+                    </div>
+                    <div class="search_button">
+                        <button type="submit" class="stb">搜淘宝</button>
+                        <button type="submit" class="sbd">搜本店</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 店铺信息部分 -->
+    <div id="shop">
+        <div class="wrapper">
+            <h3 style="font-size: 50px; color:white;  text-align:center; height:200px; line-height:200px;">店铺信息</h3>
+        </div>
+    </div>
+
+    <!-- 商品信息部分 -->
+    <div id="goods_con">
+
+        <!-- 商品详情部分 -->
+        <div class="detail_box">
+
+            <!-- 商品信息左半部   包含放大镜  标题 价钱等部分 -->
+            <div class="dt_goods_info">
+
+                <!-- 放大镜部分 -->
+                <div class="goods_scale">
+                    <div class="img_box">
+                        <a href="#">
+                             <!--<img src="https://gd1.alicdn.com/imgextra/i1/1023498653/O1CN01l1l2vT2Dn7dAG3Yhm_!!1023498653.jpg_400x400.jpg_.webp"
+                                alt="">-->
+                        </a>
+                        <div class="scale_sf">
+
+                        </div>
+                    </div>
+                    <div class="scale_bf">
+                    </div>
+                    <!--<ul class="img_list">
+                        <li>
+                            <img src="https://gd1.alicdn.com/imgextra/i1/1023498653/TB29dkDf3DD8KJjy0FdXXcjvXXa_!!1023498653.jpg_50x50.jpg_.webp"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://gd1.alicdn.com/imgextra/i1/1023498653/O1CN01l1l2vT2Dn7dAG3Yhm_!!1023498653.jpg_50x50.jpg_.webp"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://gd1.alicdn.com/imgextra/i1/1023498653/TB2IUF7XL6TBKNjSZJiXXbKVFXa_!!1023498653.jpg_50x50.jpg_.webp"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://gd4.alicdn.com/imgextra/i4/1023498653/TB24PyMfRDH8KJjSszcXXbDTFXa_!!1023498653.jpg_50x50.jpg_.webp"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://gd4.alicdn.com/imgextra/i4/1023498653/O1CN0106gqnt2Dn7dBivNHd_!!1023498653.jpg_50x50.jpg_.webp"
+                                alt="">
+                        </li>
+                    </ul> -->
+                </div>
+
+
+                <div class="goods_info_con">
+                    <h3>
+                        <span></span>
+                        <div class="report">
+                            <p>举报</p>
+                        </div>
+                    </h3>
+                    <div class="brand_title">
+                        <img src="https://img.alicdn.com/tps/TB1uibqKpXXXXXjXXXXXXXXXXXX-80-14.png" alt="">
+                        海量新品 潮流穿搭 玩趣互动
+                    </div>
+                    <div class="banner">
+                        <img src="https://img.alicdn.com/tfs/TB1rCI8nhnaK1RjSZFtXXbC2VXa-480-40.png" alt="">
+                    </div>
+                    <div class="info_con">
+                        <ul>
+                            <li class="g_price">
+                                <span class="li_title">价格</span>
+                                <div class="price_info">
+                                    <em>￥</em>
+                                    <span>568</span>
+                                </div>
+                            </li>
+                            <li class="tb_price">
+                                <span class="li_title">淘宝价</span>
+                                <div class="price_info">
+                                    <em class="pi_con">
+                                        <i>￥</i>
+                                        <span>198.00</span>
+                                    </em>
+                                    <span class="activity">活动促销</span>
+                                </div>
+                            </li>
+                            <li class="act_price">
+                                <img src="https://img.alicdn.com/tfs/TB1aGAHngHqK1RjSZFPXXcwapXa-41-16.png" alt="">
+                                <em>￥</em>
+                                <span>？？？？</span>
+                            </li>
+                            <li class="discounts">
+                                <span class="li_title">优惠</span>
+                                <div class="dc_info">
+                                    <p class="dc_line1 dc_line">
+                                        <img src="https://img.alicdn.com/tps/TB1xwH0NpXXXXaNXVXXXXXXXXXX-66-16.png" alt="">
+                                        5元店铺红包，满5.01元可用
+                                    </p>
+                                    <p class="dc_line2 dc_line">
+                                        <img src="https://img.alicdn.com/tfs/TB1ZrfnRFXXXXXgXXXXXXXXXXXX-57-16.png" alt="">
+                                        12/12-12/12每满200减20,上不封顶
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="sales_num">
+                                <p class="pl">
+                                    <a href="javascript:;">
+                                        <em>1499</em>
+                                        <span>累计评论</span>
+                                    </a>
+                                </p>
+                                <p class="jy">
+                                    <a href="javascript:;" style="cursor:auto">
+                                        <em>1231</em>
+                                        <span>交易成功</span>
+                                    </a>
+                                </p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="other_info">
+                        <ul>
+                            <li>
+                                <div class="delivery">
+                                    <p>配送</p>
+                                </div>
+                            </li>
+                            <p class="line"></p>
+                            <span class="cm">尺码助手</span>
+                            <li class="size sc_same">
+                                <p>尺码</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">38</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">39</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">40</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">41</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">42</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">43</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">44</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="colors sc_same">
+                                <p>颜色分类</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://gd4.alicdn.com/imgextra/i1/45664760/O1CN01cHmnP31l27kVTsUJo_!!45664760.jpg_30x30.jpg"
+                                                alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://gd1.alicdn.com/imgextra/i4/45664760/O1CN01quaUpj1l27kWcHNjI_!!45664760.jpg_30x30.jpg"
+                                                alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://gd1.alicdn.com/imgextra/i4/45664760/O1CN01JWlUrK1l27kX1VE88_!!45664760.jpg_30x30.jpg"
+                                                alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://gd2.alicdn.com/imgextra/i2/45664760/O1CN018RKYjR1l27kWf0IJf_!!45664760.jpg_30x30.jpg"
+                                                alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://gd3.alicdn.com/imgextra/i4/45664760/O1CN01WGTelM1l27kWpqhPL_!!45664760.jpg_30x30.jpg"
+                                                alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://gd4.alicdn.com/imgextra/i2/45664760/O1CN01yUdxaK1l27kW1nLWQ_!!45664760.jpg_30x30.jpg"
+                                                alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://gd3.alicdn.com/imgextra/i3/45664760/O1CN01IVqnRP1l27kYRzKRo_!!45664760.jpg_30x30.jpg"
+                                                alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+
+                            <li class="sc_same">
+                                <p>数量</p>
+                                <div class="count">
+                                    <a href="javascript:;" class="reduce_n count_btn">-</a>
+                                    <input type="text" value="1" class="cart_nums">
+                                    <a href="javascript:;" class="add_n count_btn">+</a>
+                                </div>
+                            </li>
+
+
+                            <li class="buy">
+                                <div class="btn_buy">
+                                    <a href="javascript:;">
+                                        立即购买
+                                    </a>
+                                </div>
+                                <div class="btn_cart">
+                                    <a href="javascript:;" class="add_cart">
+                                        <span class="site-nav-icon"></span>
+                                        加入购物车
+                                    </a>
+                                </div>
+                                <div class="gc_box" style="visibility: hidden;">
+                                    <img src="https://img.alicdn.com/imgextra/https://img.alicdn.com/imgextra/i4/420567757/O1CN01H8goVy27AklGPPZic_!!420567757.jpg"
+                                        alt="">
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="shop_info">
+                <img src="img/shop_bg.png" alt="">
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div id="fixed_cart">
+        <div class="year_end">
+        </div>
+
+        <div class="cart_box">
+            <div class="cart_logo">
+
+            </div>
+            <div class="cart_title">购物车</div>
+            <div class="cart_nums">
+                <span class="c_nums">
+                    0
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="clear:both;"></div>
+</body>
+
+</html>

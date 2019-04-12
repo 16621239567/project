@@ -1,0 +1,57 @@
+@charset "utf-8";
+#top_ad{
+    height: 100px;
+    overflow: hidden;
+    background: url(https://img.alicdn.com/tfs/TB1bVMmsSzqK1RjSZPcXXbTepXa-1920-100.png) top center no-repeat #ff9000;
+    .wrapper{
+        @include wrapper(1190px);
+        @include clearfix();
+    }
+    .top_ad_left{
+        @include wh(80px);
+        padding: 10px 10px 10px 15px;
+        float: left;
+        a{
+            @include wh(100%);
+
+        }
+    }
+    .top_ad_right{
+        float: left;
+        margin-top: 18px;
+        a{
+            float: left;
+            width: 209px;
+            height: 68px;
+            margin-right: 8px;
+        }
+        .top_ad_con{
+            margin-left: 20px;
+            margin-top: 10px;
+            position: relative;
+            img{
+                position: absolute;
+                display: block;
+                @include wh(50px);
+                right: 15px;
+                top: 0px;
+            }
+        }
+        h3{
+            @include top_middle(28px);
+            font-size: 20px;
+            color: #fff;
+            width:90px;
+            overflow: hidden;
+        }
+        p{
+            @include top_middle(16px);
+            font-size: 14px;
+            color: #fff;
+            width: 90px;
+        }
+        
+    }
+}
+
+

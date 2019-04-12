@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"
+    href="https://g.alicdn.com/vip/login/0.5.65/css/new-loginV2.css?t=20151220" />
+    <script src="script/thirdplugins/require.js" async="true" defer data-main="script/js/main.js"></script>
+
+    
+
+</head>
+<body>
+    <!-- 登陆界面头部  以及logo -->
+    <div id="header">
+        <div class="logo_container">
+            <h1 class="logo">
+                <a href="http://127.0.0.1/workPHP/taobao/src/index.html" title="淘宝网">
+                    <i class="iconfont tb-logo-cn"></i>
+                    <i class="iconfont tb-logo-url"></i>
+                </a>
+            </h1>
+            <div class="notice">
+                <p>
+                    为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！
+                </p>
+            </div>
+            <div class="suggestion">
+                <p>
+                    <a href="https://survey.taobao.com/survey/Q095thIx2">
+                        <i class="iconfont" style="font-size: 16px;
+                        color: #f40;"></i>
+                        "登陆页面"改进建议
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 登陆界面中心  以及登陆框 -->
+    <div id="content">
+        <div class="container">
+            <div class="download">
+                <a href="https://mpage.taobao.com/hd/download.html">
+                </a>
+            </div>
+            <div class="login_box_wrapper" >
+
+                <!-- 扫码登陆 -->
+                <div class="login_box_qrcode" style="display:none">
+                    <div class="login_switch">
+                            <i class="iconfont" style="font-size:45px; color:#ff4400;">&#xe636;</i>
+                    </div>
+                    <div class="login_title">
+                        <p>手机扫码，安全登陆</p>
+                    </div>
+                    <div class="qrcode">
+                        <img src="https://img.alicdn.com/tfscom/TB14eZ8tNnaK1RjSZFtwu2C2VXa.png" alt="" srcset="">
+                    </div>
+                    <div class="saoma">
+                        <i class="iconfont" style="color:#ff4400; font-size: 34px; margin-right: 10px;">&#xe660;</i>
+                        <p>打开<a href="https://www.taobao.com/m"> 手机淘宝 </a>|<a href="https://www.tmall.com/wow/portal/act/app-download?mmstat=pc_login"> 手机天猫</a><br>扫一扫登陆</p>
+                    </div>
+                    <div class="login_link">
+                        <a href="#">密码登陆</a>
+                        <a href="http://127.0.0.1/workPHP/taobao/src/registor.html">免费注册</a>
+                    </div>
+                </div>
+
+
+                <!-- 密码登陆 -->
+                <div class="login_box_password" style="display:block">
+                    <div class="login_switch">
+                            <i class="iconfont" style="font-size:58px; color:#ff4400;">&#xe638;</i>
+                    </div>
+                    <div class="login_tip">
+                        <p>
+                            <i class="iconfont" style="color:#df9c1f; margin-right:8px; font-size:14px;">&#xe663;</i>  
+                            扫码登录更安全
+                        </p>
+                    </div>
+                    <div class="login_title">
+                        <p>密码登录</p>
+                    </div>
+                    <div class="login_user">
+                        <form action="" method="POST" id="login_form">
+                            <p class="row_user form_row">
+                                <label for="login_username">
+                                    <i class="iconfont">&#xe6c3;</i>
+                                </label>
+                                <input type="text" id="login_username" name="username" placeholder="会员名/邮箱/手机号" value="">
+                            </p>
+                            <p class="row_password form_row"> 
+                                <label for="login_password">
+                                    <i class="iconfont">&#xe666;</i>
+                                </label>
+                                <input type="password" id="login_password" name="password" placeholder="" value="">
+                            </p>
+                            <button class="btn_submit" name="submit" value="提交">登录</button>
+                            <!-- <button type="submit" class="btn_submit" name="submit" value="提交">登录</button> -->
+                            <!-- <input type="button" value="用户登录" name="submit" class="login"/> -->
+
+                        </form>
+                    </div>
+                    <p class="other_login">
+                        <a href="#">
+                            <i class="iconfont" style="color: #e52425;"></i>
+                            微博登录
+                        </a>
+                        <a href="#">
+                            <i class="iconfont" style="color: #1ba9ee;"></i>
+                            支付宝登录
+                        </a> 
+                    </p>
+                    <div class="login_link" style="margin-top: 25px;">
+                        <a href="#">忘记密码</a>
+                        <a href="#">忘记会员名</a>
+                        <a href="http://127.0.0.1/workPHP/taobao/src/registor.html">免费注册</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 登陆界面底部  -->
+    <div id="bottom">
+    </div>
+
+</body>
+</html>

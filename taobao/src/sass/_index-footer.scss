@@ -1,0 +1,55 @@
+@charset "utf-8";
+#footer{
+    background: #fff;
+    padding-bottom: 10px;
+    .footer_top{
+        @include wrapper(1190px);
+        padding-top: 7px;
+        border-top: 1px solid #ddd;
+        p{
+            margin-bottom: 8px;
+            line-height: 27px;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+    .footer_mid{
+        @include wrapper(1190px);
+
+    }
+    p{
+        padding-bottom: 8px;
+        overflow: hidden;
+    }
+    span{
+        margin: 0 4px;
+        color: #9c9c9c;
+    }
+    b{
+        margin: 0 3px;
+        font-weight: 400;
+        color: #ddd;
+    }
+    em{
+        margin-left: 30px;
+        color: #9c9c9c;
+    }
+    .ga{
+        display: inline-block;
+        @include wh(20px);
+        background: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg) no-repeat -861px 0px;
+        vertical-align: middle;
+    }
+    .footer_bot{
+        @include wrapper(1190px);
+        a{
+            height: 40px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+        .footer_bg{
+            background: url(../img/footer_bg.jpg) no-repeat;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@charset "utf-8";
+#nav{
+    height: 30px;
+    position: relative;
+    .wrapper{
+        @include wrapper(1190px);
+        @include top_middle(30px);
+        @include clearfix();
+        position: relative;
+        color: #fff;
+        background-image: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+        background-repeat: repeat-x;
+        
+    }
+    h2{
+        float: left;
+        width: 190px;
+        text-align: center;
+        font-size: 16px;
+        background: #ff5000;
+    }
+    ul{
+        @include clearfix();
+        li{
+            float: left;
+            margin: 0 3px;
+            text-align: center;
+            padding: 0 4px;
+            font-size: 16px;
+            position: relative;
+            &:hover{
+                &::before{
+                    content: '\E606';
+                    font-family: iconfont;
+                    color: #ff5000;
+                    position: absolute;
+                    top: -19px;
+                    left: 50%;
+                    font-size: 12px;
+                    margin-left: -15px;
+                }
+            }
+        }
+        a{
+            padding: 0 5px;
+            font-weight: 700;
+            color: #fff;
+        }
+    }
+}
+.decoration_left{
+    width: 358px;
+    height: 800px;
+    background: url(https://img.alicdn.com/tfs/TB1sXwosSzqK1RjSZPcXXbTepXa-360-795.png) no-repeat;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.decoration_right{
+    width: 358px;
+    height: 800px;
+    background: url(https://img.alicdn.com/tfs/TB1sXwosSzqK1RjSZPcXXbTepXa-360-795.png) no-repeat;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    position: absolute;
+}

@@ -1,0 +1,106 @@
+@charset "utf-8";
+#header{
+    background-color: #FFF;
+    width: 100%;
+    padding-top: 10px;
+    .wrapper{
+        @include wrapper(1140px);
+        height: 60px;
+    }
+    
+}
+.logo{
+    float: left;
+    margin-top: 5px;
+    img{
+        width: 96px;
+    }
+}
+.market{
+    float: left;
+    margin: 14px 20px;
+    position: relative;
+    .more{
+        position: relative;
+        display: block;
+        border: 1px solid #e2e2e2;
+        padding: 0 8px;
+        width: 62px;
+        height: 18px;
+        font: 12px/18px "\5b8b\4f53";
+        line-height: 18px;
+        _line-height: 22px;
+        color: #666;
+        background: #fff;
+        text-decoration: none!important;
+        z-index: 100;
+        cursor: default;
+        span{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+.search_box{
+    margin-top: 10px;
+    float: right;
+    width: 427px;
+    position: relative;
+}
+.search_input{
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #f40;
+    margin-left: 2px;
+    margin-right: 0;
+    margin-top: 2px;
+    float: left;
+    width: 278px;
+    z-index: 100;
+    input{
+        width: 100%;
+        font-size: 14px;
+        position: relative;
+        height: 20px;
+        line-height: 20px;
+        padding: 3px;
+        margin: 2px 0 0 2px;
+        vertical-align: middle;
+        border: 0 none;
+        outline: 0;
+        text-indent: 5px;
+    }
+}
+.search_button{
+    position: relative;
+    float: right;
+    background-color: #fff;
+    top: 2px;
+    button{
+        cursor: pointer;
+        border: 0;
+        font-size: 12px;
+        float: left;
+        width: 72px;
+        height: 30px;
+        background-color: #f40;
+        color: #fff;
+        margin-left: -1px;
+    }
+    /* 搜本店 */
+    .sbd{
+        background-color: #ffe4d0;
+        color: #f40;
+        border: 1px solid #ffb086;
+        margin-left: 3px;
+    }
+}
+
+/*  店铺 信息 部分*/
+#shop{
+    width: 100%;
+    height: 200px;
+    background: black;
+}

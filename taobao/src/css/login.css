@@ -1,0 +1,237 @@
+@charset "UTF-8";
+body a {
+  text-decoration: none;
+  color: #666; }
+  body a:hover {
+    text-decoration: none; }
+
+/*                 登陆界面的头部                 */
+#header {
+  height: 44px;
+  padding: 22px 0;
+  /*                 登陆界面的logo部分               */
+  /*                 登陆界面的注意事项部分               */
+  /*                 登陆界面的建议部分               */ }
+  #header .logo_container {
+    width: 1200px;
+    margin: 0 auto; }
+    #header .logo_container::after {
+      content: "";
+      display: block;
+      width: 0;
+      overflow: hidden;
+      visibility: hidden; }
+  #header a:hover {
+    text-decoration: none;
+    color: #666; }
+  #header .logo {
+    float: left; }
+    #header .logo a {
+      display: block;
+      width: 110px;
+      height: 60px;
+      position: relative; }
+    #header .logo .iconfont {
+      display: block;
+      color: #f40;
+      font-weight: 400; }
+    #header .logo .tb-logo-cn {
+      font-size: 36px;
+      position: relative;
+      top: -9px; }
+    #header .logo .tb-logo-url {
+      font-size: 50px;
+      position: relative;
+      top: -52px; }
+  #header .notice {
+    width: 880px;
+    margin: 0 auto;
+    float: left;
+    line-height: 16px;
+    padding: 6px 10px;
+    border: 1px solid #ffb4a8;
+    background: #fef2f2;
+    margin-left: 94px; }
+    #header .notice p {
+      text-align: center;
+      color: #6C6C6C; }
+  #header .suggestion {
+    float: right; }
+    #header .suggestion p {
+      line-height: 44px; }
+    #header .suggestion a {
+      margin: 0 4px; }
+      #header .suggestion a:hover {
+        color: #f40; }
+
+/*                 登陆界面的内容区域  及登陆框               */
+/*   content  为登陆内容的部分    */
+#content {
+  width: 100%;
+  height: 600px;
+  background: url("https://gtms01.alicdn.com/tps/i1/TB1GTCYLXXXXXcHXpXXcoeQ2VXX-2500-600.jpg") no-repeat center center;
+  /*   download  为内容中下载中心部分    */
+  /*   login_box  为登陆框部分    */ }
+  #content .container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative; }
+  #content .download {
+    position: relative; }
+    #content .download a {
+      display: block;
+      width: 630px;
+      height: 440px;
+      position: absolute;
+      left: 80px;
+      top: 80px; }
+  #content .login_box_wrapper {
+    width: 350px;
+    position: absolute;
+    right: 60px;
+    top: 120px;
+    /*   login_box_qrcode  和 login_box_qrcode 公共部分      */
+    /*   login_box_qrcode  为扫码登录框的内容       */
+    /*   login_box_qrcode  为密码登录框的内容       */ }
+    #content .login_box_wrapper .login_title {
+      font-size: 16px;
+      line-height: 18px;
+      height: 18px;
+      color: #3c3c3c;
+      font-weight: 700;
+      padding-bottom: 8px;
+      margin-top: 9px; }
+    #content .login_box_wrapper .login_switch {
+      width: 52px;
+      height: 52px;
+      line-height: 52px;
+      position: absolute;
+      right: 6px;
+      top: 6px; }
+    #content .login_box_wrapper .login_link {
+      margin-top: 15px;
+      text-align: right; }
+      #content .login_box_wrapper .login_link a {
+        margin: 0 4px; }
+    #content .login_box_wrapper .login_box_qrcode {
+      width: 300px;
+      height: 302px;
+      padding: 25px 25px 23px;
+      color: #c6c6c6;
+      position: relative;
+      background: rgba(255, 255, 255, 0.9); }
+    #content .login_box_wrapper .qrcode {
+      height: 140px;
+      margin-top: 24px;
+      position: relative;
+      left: 80px; }
+    #content .login_box_wrapper .saoma {
+      width: 188px;
+      margin: 24px auto 0; }
+      #content .login_box_wrapper .saoma p {
+        display: inline-block;
+        color: #9c9c9c; }
+      #content .login_box_wrapper .saoma a {
+        color: #f40; }
+    #content .login_box_wrapper .login_box_password {
+      width: 300px;
+      height: 302px;
+      padding: 25px 25px 23px;
+      color: #c6c6c6;
+      position: relative;
+      background: rgba(255, 255, 255, 0.9); }
+    #content .login_box_wrapper .login_tip {
+      position: absolute;
+      top: 5px;
+      right: 58px;
+      color: #df9c1f;
+      font-weight: 400; }
+      #content .login_box_wrapper .login_tip p {
+        border: 1px solid #f3d995;
+        height: 16px;
+        line-height: 16px;
+        padding: 5px 20px 5px 15px;
+        background: #fefcee;
+        font-size: 12px; }
+    #content .login_box_wrapper form .iconfont {
+      font-size: 22px; }
+    #content .login_box_wrapper form input {
+      width: 240px;
+      font-size: 14px;
+      line-height: 18px;
+      height: 18px;
+      padding: 11px 8px 11px 50px;
+      border: 1px solid #ddd; }
+    #content .login_box_wrapper form input:focus {
+      outline: -webkit-focus-ring-color auto 5px; }
+    #content .login_box_wrapper form button {
+      width: 300px;
+      height: 42px;
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: middle;
+      line-height: 42px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      background: #f40;
+      border-radius: 3px;
+      border: 0;
+      cursor: pointer;
+      margin-top: 20px; }
+    #content .login_box_wrapper .form_row {
+      margin-top: 20px;
+      position: relative; }
+      #content .login_box_wrapper .form_row label {
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        background: #ddd;
+        text-align: center;
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        outline: 0; }
+    #content .login_box_wrapper .other_login {
+      margin-top: 20px; }
+      #content .login_box_wrapper .other_login a {
+        display: inline-block;
+        margin-right: 20px; }
+
+#bottom {
+  width: 1200px;
+  margin: 0 auto;
+  height: 170px;
+  border-top: 1px solid #ddd;
+  margin: 60px auto 0;
+  padding: 7px 0 9px; }
+  #bottom p {
+    padding-bottom: 8px; }
+  #bottom .footer_top p {
+    line-height: 27px;
+    border-bottom: 1px solid #ddd; }
+    #bottom .footer_top p a {
+      margin: 0 4px; }
+    #bottom .footer_top p span {
+      display: inline;
+      margin: 0 1px;
+      color: #9c9c9c;
+      font-weight: normal; }
+  #bottom .footer_md p a {
+    margin: 0 4px; }
+  #bottom .footer_md p span {
+    display: inline;
+    margin: 0 1px;
+    color: #9c9c9c;
+    font-weight: normal; }
+  #bottom .footer_md p i {
+    display: inline;
+    margin: 0 1px;
+    color: #9c9c9c;
+    font-weight: normal;
+    margin: 0 4px;
+    font-style: normal; }
+
+/*# sourceMappingURL=login.css.map */

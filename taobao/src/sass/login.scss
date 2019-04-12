@@ -1,0 +1,26 @@
+@charset "utf-8";
+@mixin wrapper($width){
+    width: $width;
+    margin: 0 auto;
+}
+@mixin clearfix() {
+    &::after{
+        content: "";
+        display: block;
+        width: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+}
+body{
+    a{
+        text-decoration: none;
+        color: #666;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+@import "login-header";
+@import "login-content";
+@import "bottom";

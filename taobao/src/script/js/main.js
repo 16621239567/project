@@ -1,0 +1,1 @@
+require(['module_index','module_details','module_register','module_login','module_cart'])

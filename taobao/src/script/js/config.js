@@ -1,0 +1,9 @@
+require.config({
+	baseUrl:'',
+	paths:{
+		'jquery':'https://cdn.staticfile.org/jquery/3.3.1/jquery.min',
+		'jqcookie':'https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min',
+		'jqvalidate':'http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min',
+		'jqlzload':'https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min'
+	}
+});
